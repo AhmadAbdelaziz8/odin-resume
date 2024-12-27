@@ -1,0 +1,26 @@
+:root {
+  --sidebar-width: minMax(250px, auto);
+}
+#root {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr 1fr;
+  gap: 1rem;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.sideBar {
+  grid-column: 1;
+}
+
+.editorContainer {
+  grid-column: 2/3;
+}
+
+.cvPreview {
+  grid-column: 3/4;
+  background-color: #f4f4f4; /* Example styling */
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
